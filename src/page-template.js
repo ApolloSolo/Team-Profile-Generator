@@ -15,11 +15,7 @@ const templateManager = (dataArr) => {
               <li class="list-group-item"><a href="mailto:${employeeInfo.email}">Email</a></li>
               <li class="list-group-item">Employee ID: ${employeeInfo.id}</li>
             </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-            </div>
+          </div>
             `;
         })
         .join("")}
@@ -40,8 +36,8 @@ const templateEngineer = (dataArr) => {
               <h6 class="card-text">${employeeInfo.name}</h6>
             </div>
             <ul class="list-group list-group-flush">
-            <li class="list-group-item">Employee ID: ${employeeInfo.id}</li>
-            <li class="list-group-item"><a href="mailto:${employeeInfo.email}">Email</a></li>
+              <li class="list-group-item">Employee ID: ${employeeInfo.id}</li>
+              <li class="list-group-item"><a href="mailto:${employeeInfo.email}">Email</a></li>
               <li class="list-group-item"><a href="${gitHubLink}" target="_blank">GitHub</a></li>
             </ul>
           </div>
@@ -65,8 +61,8 @@ const templateIntern = (dataArr) => {
               <h6 class="card-text">${employeeInfo.name}</h6>
             </div>
             <ul class="list-group list-group-flush">
-            <li class="list-group-item">Employee ID: ${employeeInfo.id}</li>
-            <li class="list-group-item"><a href="mailto:${employeeInfo.email}">Email</a></li>
+              <li class="list-group-item">Employee ID: ${employeeInfo.id}</li>
+              <li class="list-group-item"><a href="mailto:${employeeInfo.email}">Email</a></li>
               <li class="list-group-item">School: ${school}</li>
             </ul>
           </div>
