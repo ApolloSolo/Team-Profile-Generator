@@ -28,7 +28,7 @@ const templateEngineer = (dataArr) => {
     
       ${dataArr
         .filter((position) => position.employeeInfo.rank === "Engineer")
-        .map(({ employeeInfo, gitHubLink }) => {
+        .map(({ employeeInfo, username }) => {
           return `
           <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -38,7 +38,7 @@ const templateEngineer = (dataArr) => {
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Employee ID: ${employeeInfo.id}</li>
               <li class="list-group-item"><a href="mailto:${employeeInfo.email}">Email</a></li>
-              <li class="list-group-item"><a href="${gitHubLink}" target="_blank">GitHub</a></li>
+              <li class="list-group-item"><a href="${username}" target="_blank">GitHub</a></li>
             </ul>
           </div>
             `;
